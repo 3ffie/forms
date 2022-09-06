@@ -1,6 +1,9 @@
 input, textarea, select {
 	display: block;
 }
+header {
+	display: grid;
+}
 
 fieldset {
 	background-color: white;
