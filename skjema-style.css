@@ -1,6 +1,7 @@
-input, textarea, select {
-	display: block;
+body {
+	display: grid;
 }
+
 header {
 	display: grid;
 }
