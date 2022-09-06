@@ -1,0 +1,15 @@
+input, textarea, select {
+	display: block;
+}
+
+fieldset {
+	background-color: white;
+}
+
+legend {
+	background-color: white;
+}
+
+input[type="text"] {
+	background-color: white;
+}

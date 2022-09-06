@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Forms</title>
+		<link rel="stylesheet" href="./skjema-style.css">
+		<link rel="stylesheet" href="./forms/reset.css">
+	</head>
+	<body>	
+		<form action="result.html" metode="get">
+			<fieldset>
+				<legend>Personopplysninger</legend>
+				<label></label>
+			</fieldset>
+			<fieldset>
+				<legend>Betalingsinformasjon</legend>
+				<label for="firstname">Fornavn</label>
+				<input type="text" name="firstname" autocomplete="off" value="" id="firstname">
+				<label for="lastname">Etternavn</label>
+				<input type="text" name="lastname" autocomplete="off" id="lastname">
+				<label for="cardtype">Kortype</label>
+				<select>
+					<option>Visa</option>
+					<option>Mastercard</option>	
+					<option>Amex</option>
+				</select>
+				<label for="banknumber">Kortnummer</label>	
+				<input type="tel" name="cardnumber" id="cardnumber" autocomplete="off" pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}">
+				<label for="expiredate">Utløpsdato</label>
+				<input type="month" name="utløpsdato" id="expiredate">
+				<label for="ccv">CCV</label>
+				<input type="number" min="000" max="999" >
+			</fieldset>
+			<button>Send inn</button>
+			<footer></footer>
+
+
+			
+		</form>
+	</body>
+</html>
