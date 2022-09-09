@@ -1,37 +1,75 @@
 body {
+	background-color: rgb(235, 194, 143);
+	margin: 30px 50px;
+	width: auto;
+	max-width: 2000px;
+}
+
+input, textarea, select {
+	display: block;
+	margin: 10px;
+}
+
+header nav ul {
 	display: grid;
-	grid-template-columns: auto; 
-	grid-template-rows: auto;
-	gap: 20px;
-	grid-template-areas: 
-	"header header header header"
-	"section section . . "
-	"form form"
-	"footer footer footer footer"
+	gap: 50px;
+	margin: 20px auto;
+	list-style: none;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: rgb(184, 211, 184);
 }
 
-.header {
-	display: grid;
-	grid-area: header;
+header nav a {
+	color: black;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
-.section {
-	grid-area: section;
-}
-
-.form {
-	grid-area: form;
-}
-
-.footer {
-	grid-area: footer;
+section {
+	display: inline-block;
+	gap: 40px;
+	margin: 50px 50px;
 }
 
 fieldset {
-	background-color: white;
+	background-color: rgb(184, 211, 184);
+	border-style: outset;
+	border-color: rgb(103, 148, 145);
 }
 
 legend {
-	background-color: white;
+	background-color: antiquewhite;
+	font-family:Arial, Helvetica, sans-serif;
+	color: black;
+	padding: 5px 10px;
 }
 
+input {
+	background-color: antiquewhite;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 10px;
+}
+
+.cupcake {
+	grid-column: 1 / 2;
+}
+
+.personal {
+	grid-column: 2 / 3;
+}
+
+.submit {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 5px 5px;
+	padding: 5px ;
+}
+
+.footer {
+	font-size: 15px;
+	color: gray;
+	font-family: 'Courier New', Courier, monospace;
+}

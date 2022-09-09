@@ -3,71 +3,63 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Dessertkurs</title>
+		
+		<link rel="stylesheet" href="./reset.css">
 		<link rel="stylesheet" href="./skjema-style.css">
-		<link rel="stylesheet" href="./forms/reset.css">
 	</head>
+
 	<body>
-		<header class="header"> 
-			<h1>Fryd</h1>
+		<header>
 			<nav>
 				<ul>
-					<li>Produkter</li>
-					<li>Kurs og Selskap</li>
-					<li>Om Fryd</li>
+					<li><a href="">Produkter</a></li>
+					<li><a href="">Kurs og Selskap</a></li>
+					<li><a href="">Om Fryd</a></li>
 				</ul>
 			</nav>
-		</header>	
+		</header>
 		<!--remember to put in aside-->
-		<main>
+
 		<section class="section">
 			<article>
 				<h2>Delta på Dessertkurs</h2>
 				<p> På dette kurset får man lære å lage sjokolademousse, vannbakkels, sitronkrem og salt karamell. Man får også mange gode tips for å lykkes med kakebaksten. Her kan du få svar på det meste du lurer på når det gjelder kaker og desserter. Det blir omvisning på sjokoladerommet, selvfølgelig med prøvesmaking av Fryds konfekter. Det blir servert kaffe eller te til søtsakene. 
-					Kursene holdes av våre konditorsjefer. Pris per person er 1000,- </p>
+					Kursene holdes av våre konditorsjefer. Pris per person er 1000,- 
+				</p>
+				
 			</article>
 		</section>
 
 		<form action="result.html" metode="get" class="form">
-			<fieldset>
-				<legend>Personopplysninger</legend>
+			<figure class="cupcake">
+				<img src="assets/cupcakes.jpg" alt="cupcake" width="600px" height="500px">
+			</figure>
+			<fieldset class="personal">
+				<legend>Personopplysninger</legend><br>
 				<label for="firstname">Fornavn</label>
-				<input type="text" name="firstname" id="firstname" required>
+				<input type="text" name="firstname" autocomplete="off" placeholder="Navn" id="firstname" required>
 				<label for="lastname">Etternavn</label>
-				<input type="text" name="lastname" autocomplete="off" id="lastname" required>
+				<input type="text" name="lastname" autocomplete="off" placeholder="Etternavn" id="lastname" required>
 				<label for="phonenumber">Mobiltelefon</label>
 				<input type="tel" name="phonenumber" id="phonenumber" required>
 				<label for="email">E-post</label>
-				<input type="email" name="email" required>
+				<input type="email" name="email" id="email">
 				<label for="date">Ønsket dato</label>
-				<input type="date" name="email">
+				<input type="date" name="date" id="date">
 				<label for="participant">Antall deltagere</label>
 				<input type="number" min="1" max="12">
+
+				<p>Hvilken av våre lokaler vil du besøke?</p><br>
+
+				<label for="place">Fryd Dronningsgate</label>
+				<input type="radio" name="place" id="place" value="place">
+				<label for="place">Fryd Majorstuen</label>
+				<input type="radio" name="place" id="place" value="place">
 				<label for="wishes">Matallergier/ønsker/andre kommentarer</label>
 				<textarea cols="20" rows="10"></textarea>
+				<input type="submit" class="submit" value="Send inn" >
 			</fieldset>
-
-			<fieldset>
-				<legend>Betalingsinformasjon</legend>
-				<label for="firstname">Fornavn</label>
-				<input type="text" name="firstname" autocomplete="off" value="" id="firstname">
-				<label for="lastname">Etternavn</label>
-				<input type="text" name="lastname" autocomplete="off" id="lastname">
-				<label for="cardtype">Kortype</label>
-				<select>
-					<option>Visa</option>
-					<option>Mastercard</option>	
-					<option>Amex</option>
-				</select>
-				<label for="banknumber">Kortnummer</label>	
-				<input type="tel" name="cardnumber" id="cardnumber" autocomplete="off" pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}">
-				<label for="expiredate">Utløpsdato</label>
-				<input type="month" name="utløpsdato" id="expiredate">
-				<label for="ccv">CCV</label>
-				<input type="number" min="000" max="999" >
-			</fieldset>
-			<button>Send inn</button>
 		</form>
-		</main>
-		<footer class="footer"></footer>
+		<footer class="footer"> Copyright @ Fryd</footer>
 	</body>
 </html>
