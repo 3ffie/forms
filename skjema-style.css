@@ -3,26 +3,6 @@ body {
 	max-width: 2000px;
 }
 
-/*.navigation {
-	display: grid;
-	gap: 50px;
-	margin: 20px auto;
-	list-style: none;
-	grid-template-columns: 1fr 1fr 1fr;
-	align-items: space-between;
-	justify-content: space-between;
-	background-color: rgb(184, 211, 184);
-}*/
-
-/*header nav ul {
-	display: grid;
-	gap: 50px;
-	margin: 20px auto;
-	list-style: none;
-	grid-template-columns: 1fr 1fr 1fr;
-	background-color: rgb(184, 211, 184);
-}*/
-
 header {
 	display: flex;
 	justify-content: space-between;
