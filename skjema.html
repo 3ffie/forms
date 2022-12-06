@@ -10,62 +10,97 @@
 
 	<body>
 		<header>
-			<nav>
-				<ul>
-					<li><a href="">Produkter</a></li>
-					<li><a href="">Kurs og Selskap</a></li>
-					<li><a href="">Om Fryd</a></li>
+			<div class="logo">
+				Fryd
+			</div>
+
+			<nav class="navigation">
+				<ul class="navigation__links">
+					<li class="navigation__info"><a href="">Produkter</a></li>
+					<li class="navigation__info"><a href="">Kurs og Selskap</a></li>
+					<li class="navigation__info"><a href="">Om Fryd</a></li>
 				</ul>
 			</nav>
+			<button class="contact">Kontakt oss</button>
 		</header>
-		<!--remember to put in aside-->
-
+		
 		<section class="section">
-			<article>
+			<figure>
+				<img class="section__image" src="assets/michaela-baum-VnM6_liIRJ0-unsplash.jpg" alt="cupcake">
+				<figurecaption></figurecaption>
+			</figure>
+			
+			<article class="section__article">
 				<h2>Delta på Dessertkurs</h2>
 				<p> På dette kurset får man lære å lage sjokolademousse, vannbakkels, sitronkrem og salt karamell. Man får også mange gode tips for å lykkes med kakebaksten. Her kan du få svar på det meste du lurer på når det gjelder kaker og desserter. Det blir omvisning på sjokoladerommet, selvfølgelig med prøvesmaking av Fryds konfekter. Det blir servert kaffe eller te til søtsakene. 
 					Kursene holdes av våre konditorsjefer. Pris per person er 1000,- 
 				</p>
-				
 			</article>
 		</section>
 
 		<form action="result.html" metode="get" class="form">
-			<figure class="cupcake">
-				<img src="assets/cupcakes.jpg" alt="cupcake" width="600px" height="500px">
-			</figure>
-			<fieldset class="personal">
+			<fieldset class="form__personal">
 				<legend>Personopplysninger</legend><br>
 				<label for="firstname">Fornavn</label>
 				<input 
 					type="text" 
 					name="firstname" 
 					autocomplete="off" 
-					placeholder="Navn"
+					placeholder="Fornavn"
 					id="firstname" 
 					required>
 				<label for="lastname">Etternavn</label>
-				<input type="text" name="lastname" autocomplete="off" placeholder="Etternavn" id="lastname" required>
+				<input 
+					type="text" 
+					name="lastname" 
+					autocomplete="off" 
+					placeholder="Etternavn" 
+					id="lastname" 
+					required>
 				<label for="phonenumber">Mobiltelefon</label>
-				<input type="tel" name="phonenumber" id="phonenumber" required>
+				<input 
+					type="tel" 
+					name="phonenumber" 
+					id="phonenumber" 
+					required>
 				<label for="email">E-post</label>
-				<input type="email" name="email" id="email">
+				<input 
+					type="email" 
+					name="email" 	
+					id="email">
 				<label for="date">Ønsket dato</label>
-				<input type="date" name="date" id="date">
+				<input 	
+					type="date" 
+					name="date" 
+					id="date">
 				<label for="participant">Antall deltagere</label>
-				<input type="number" min="1" max="12">
+				<input 
+					type="number" 
+					min="1" 
+					max="12">
 
-				<p>Hvilken av våre lokaler vil du besøke?</p><br>
+				<legend> Hvilken av våre lokaler vil du besøke?</legend><br>
 
 				<label for="place">Fryd Dronningsgate</label>
-				<input type="radio" name="place" id="place" value="place">
+				<input 
+					type="radio" 
+					name="place" 
+					id="place" 
+					value="place">
 				<label for="place">Fryd Majorstuen</label>
-				<input type="radio" name="place" id="place" value="place">
+				<input 
+					type="radio" 
+					name="place" 
+					id="place" 
+					value="place">
 				<label for="wishes">Matallergier/ønsker/andre kommentarer</label>
 				<textarea cols="20" rows="10"></textarea>
-				<input type="submit" class="submit" value="Send inn" >
+				<input 
+					type="submit" 
+					class="form__submit" 
+					value="Send inn" >
 			</fieldset>
 		</form>
-		<footer class="footer"> Copyright @ Fryd</footer>
+		<footer class=" footer">Copyright @ Fryd</footer>
 	</body>
 </html>
